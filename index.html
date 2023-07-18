@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Flashcards</h1>
+                <div class="buttonss">
+                    <button onclick="newShown()">New Card</button>
+                    <button onclick="delCard()">Del Card</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align: center;">Create Flashcards</h2>
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+            <div>
+                <button onclick="addCard()">Save</button>
+                <button onclick="hideBox()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="flashcards">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

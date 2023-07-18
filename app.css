@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background: #f0f0f0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    background: white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    background: whitesmoke;
+    box-shadow: none;
+    font-family: inherit;
+    
+}
+.buttonss{
+    padding-top: 8px;
+}
+
+button:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.container{
+    width: 95%;
+    margin: auto;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    margin: auto;
+}
+.create-box{
+    border: 3px solid rgba(245, 245, 245, 0.698);;
+    width: 480px;
+    margin: auto;
+    height:max-content;
+    margin-top: 20px;
+    background: rgba(245, 245, 245, 0.698);
+    box-shadow: 0px 7px 7px 0px;
+    border-radius: 5px;
+    padding: 15px;
+}
+.create-box label{
+    margin-top: 5px;
+}
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid lightgrey;
+    padding-top: 10px;
+    padding-left: 3px;
+
+}
+
+.flashcards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 10px;
+    width: 100%;
+    margin-top: 30px;
+    background: #f0f0f0;
+
+    
+}
+
+.flashcard{
+    width: 360px;
+    word-wrap: break-word;
+    height: 200px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5);
+
+}
+@media(max-width:520px){
+    .create-box{
+        width: 300px;
+        height: max-content;
+    }
+    
+    .flashcard{
+        width: 280px;
+        height: 180px;
+    }
+}
+
+@media(max-width:355px){
+    .nav{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .create-box{
+        width: 200px;
+    }
+
+    .flashcard{
+        width: 190px;
+        height: 100px;
+    }
+}
