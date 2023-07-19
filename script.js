@@ -23,7 +23,7 @@ function divMaker (text) {
     newDiv.appendChild(h2_q);
     newDiv.appendChild(h2_a);
 
-    newDiv.addEventListener('dblclick', function () {
+    newDiv.addEventListener('click', function () {
         if (h2_a.style.display == "none"){
             h2_a.style.display = "block"
             h2_q.style.display = "none";
